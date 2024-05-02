@@ -1,0 +1,697 @@
+﻿@model Loginregister.ViewModels.DashboardViewModel
+
+@{
+    ViewData["Title"] = "Dashboard9";
+}
+
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/dashboard.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ckeditor/4.9.2/ckeditor.js"
+            integrity="sha512-OF6VwfoBrM/wE3gt0I/lTh1ElROdq3etwAquhEm2YI45Um4ird+0ZFX1IwuBDBRufdXBuYoBb0mqXrmUA2VnOA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        function handleAction(action) {
+            if (action === 'download') {
+                
+                var dummyFileContent = "This is a dummy file content.";
+                var fileName = "example.txt";
+                var fileType = "text/plain";
+
+                var blob = new Blob([dummyFileContent], { type: fileType });
+                var link = document.createElement("a");
+                link.href = URL.createObjectURL(blob);
+                link.download = fileName;
+                link.click();
+            } else if (action === 'view') {
+                
+                var dummyFileURL = "https://www.example.com/example.pdf";
+                window.open(dummyFileURL, '_blank');
+            }
+        }
+        document.addEventListener("DOMContentLoaded", function () {
+            const secondTab = document.getElementById("simple-tab-1");
+            const elementsToHide = document.querySelectorAll(".col-md-3, .col-md-6");
+
+            secondTab.addEventListener("click", function () {
+                elementsToHide.forEach(function (element) {
+                    element.style.display = "none";
+                });
+            });
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+            const secondTab = document.getElementById("simple-tab-0");
+            const elementsToHide = document.querySelectorAll(".col-md-3, .col-md-6");
+
+            secondTab.addEventListener("click", function () {
+                elementsToHide.forEach(function (element) {
+                    element.style.display = "block";
+                });
+            });
+        });
+        
+        document.addEventListener("DOMContentLoaded", function () {
+            debugger;
+            const tabs = document.querySelectorAll('.nav-link');
+            tabs.forEach(function(tab) {
+                tab.addEventListener('click', function() {
+                    const tabName = tab.innerHTML.trim();
+                    if(tabName === "Files"){
+                        document.getElementById('upload_Docs').style.display = 'block';
+                    }else{
+                        document.getElementById('upload_Docs').style.display = 'none';
+                    }
+                });
+            });
+        });
+
+
+       
+
+       
+
+        
+                                 
+                                       
+                    
+    </script>
+</head>
+
+<body>
+    <div class="container-fluid land">
+        <div class="row">
+            <div class="col-lg-2 p-0">
+                <div class="sidebar position-fixed side pt-2">
+                    <img src="/img/Logo.png" class="img-thumbnail mb-4 small-image"
+                         alt="logo">
+                    <a href="Dashboard1.html" class="board"><img class="me-2" src="/img/apps.png" />Dashboard</a>
+                    <a href="Dashboard13.html" class="das fs-14"><img class="me-2" src="/img/briefcase 04.png" />Recalls</a>
+                    <a href="#Schedules" class="das fs-14"><img class="me-2" src="/img/notes 01.jpg" />Schedules</a>
+                    <a href="#Tracking" class="das fs-14"><img class="me-2" src="/img/Vector (2).png" />Tracking</a>
+                    <a href="#Reports" class="das fs-14"><img class="me-2" src="/img/notepad.jpg" />Reports</a>
+                    <a href="#Manage Users" class="das fs-14"><img class="me-2" src="/img/users 02.jpg" />Manage Users</a>
+                    <a href="#Candidates" class="das fs-14"><img class="me-2" src="/img/can.jpg" />Candidates</a>
+                    <a href="#Manual Documents" class="das fs-14"><img class="me-2" src="/img/man.jpg" />Manual Documents</a>
+                    <a href="#Downloads" class="das fs-14"><img class="me-2" src="/img/down.jpg" />Downloads</a>
+                    <a href="#Payroll" class="das fs-14"><img class="me-2" src="/img/pay.jpg" />Payroll</a>
+                    <a href="#Setting" class="das fs-14"><img class="me-2" src="/img/setting.jpg" />Setting</a><br>
+                    <button id="lightModeButton" type="button" class="btn btn-purple"><img class="me-2" src="/img/sun.png" />Light</button>
+
+                    <button id="darkModeButton" type="button" class="btn btn-white"><img class="me-2" src="/img/moon.jpg" />Dark</button>
+
+                </div>
+            </div>
+            <div class="col-lg-10 p-4 ">
+                <nav class="navbar bg-white" style="z-index: 999;">
+                    <div class="container-fluid">
+                        <form class="" role="search">
+                            <input class="form-control me-4  " type="search" placeholder="Search" aria-label="Search">
+                        </form>
+
+                        <div class="col-lg-4">
+                            <form class="d-flex align-items-center justify-content-between" role="search">
+
+                                <div class="d-flex align-items-center" style="padding-left: 100px;">
+                                    <img src="/img/moon-outline.png" style="height: 24px;" class="img-thumbnail mb-0 me-2" alt="...">
+                                    <img src="/img/bell-outline.png" style="height: 24px;" class="img-thumbnail mb-0 me-2" alt="...">
+                                    <a href="#" class="nav-link  d-flex align-items-center me-1" id="" role="" data-toggle="" aria-haspopup="true" aria-expanded="false">
+                                        <img src="/img/Avatar.png" style="height: 20px; margin-right: 0;" class="profile-image" alt="Profile Image">
+                                    </a>
+                                    <button type="button" class="btn btn-primary btn-sm">Logout</button>
+
+                                </div>
+
+                            </form>
+                        </div>
+
+                    </div>
+                </nav>
+                <div class="container-fluid position-relative" style="top: 60px;">
+                    <h4 class="" style="font-weight: bold;">Project Name #651131</h4>
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item active" aria-current="page">
+                                <img class="me-2"
+                                     src="/img/home.png" />Dashboard
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">Project List</li>
+                            <li class="breadcrumb-item active" aria-current="page">
+                                Project Details
+                            </li>
+
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-3">
+
+        <div class="col-lg-7">
+            <div class="card card_das col-lg-7 mt-5">
+                <div class="card-body">
+                    <h6 class="card-title" style="color: rgba(235, 224, 19, 1);">Recall ID: #651131</h6>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Equipment Upgrade - Rowan medical Center</h6>
+                    <div class="row">
+
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active" id="simple-tab-0" data-bs-toggle="tab"
+                                   href="#simple-tabpanel-0" role="tab" aria-controls="simple-tabpanel-0" aria-selected="true" style="color: #591796;">Project Details</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="simple-tab-1" data-bs-toggle="tab"
+                                   href="#simple-tabpanel-1" role="tab" aria-controls="simple-tabpanel-1" aria-selected="false">Description</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="simple-tab-2" data-bs-toggle="tab"
+                                   href="#simple-tabpanel-2" role="tab" aria-controls="simple-tabpanel-2" aria-selected="false">Activity Stream</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="simple-tab-3" data-bs-toggle="tab"
+                                   href="#simple-tabpanel-3" role="tab" aria-controls="simple-tabpanel-2" aria-selected="false">History</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="simple-tab-3" data-bs-toggle="tab"
+                                   href="#simple-tabpanel-4" role="tab" aria-controls="simple-tabpanel-2" aria-selected="false">Files</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content pt-5" id="tab-content">
+                            <div class="tab-pane active" id="simple-tabpanel-0" role="tabpanel" aria-labelledby="simple-tab-0">
+                                <div class="row">
+                                    @if (Model.Tasks != null && Model.Tasks.Any())
+                                    {
+                                     
+                                        @foreach (var task in Model.Tasks)
+
+                                        if (task != null)
+                                        {
+
+                                            <div class="col">
+                                                <h6 class="head_text">Assigned to</h6>
+                                                <div class="dropdown drop_user">
+                                                    <button class="btn btn-secondary dropdown-toggle p-0 rounded-2" type="button" id="assignedToDropdown" data-bs-toggle="dropdown" aria-expanded="false" style="height: 35px;font-size: 10px;">
+                                                        <img class="grop" src="/img/Group 4.png" alt="Rahul's Image">
+                                                        @(task.AssignedTo ?? "N/A")
+                                                    </button>
+                                                    <ul class="dropdown-menu" aria-labelledby="assignedToDropdown">
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <div class="col">
+                                                <h6 class="head_text">Department</h6>
+                                                <div class="dropdown">
+                                                    <button class="btn btn-secondary dropdown-toggle p-0 rounded-2" type="button" id="departmentDropdown" data-bs-toggle="dropdown" aria-expanded="false" style="height: 35px;font-size:10px">
+                                                        @(task.Department ?? "N/A")
+                                                    </button>
+                                                    <ul class="dropdown-menu" aria-labelledby="departmentDropdown">
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <div class="col">
+                                                <h6 class="head_text">Created by</h6>
+                                                <div class="dropdown">
+                                                    <button class="btn btn-secondary dropdown-toggle p-0 rounded-2" type="button" id="createdByDropdown" data-bs-toggle="dropdown" aria-expanded="false" style="height: 35px;font-size: 10px;">
+                                                        @(task.CreatedBy ?? "N/A")
+                                                    </button>
+
+                                                    <ul class="dropdown-menu" aria-labelledby="createdByDropdown">
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <div class="col">
+                                                <h6 class="head_text">Status</h6>
+                                                <div class="dropdown">
+                                                    <button class="btn btn-secondary dropdown-toggle p-0 rounded-2 " type="button" id="statusDropdown" data-bs-toggle="dropdown" aria-expanded="false" style="height: 35px;font-size: 10px;">
+                                                        @(task.Status ?? "N/A")
+                                                    </button>
+                                                    <ul class="dropdown-menu" aria-labelledby="statusDropdown">
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+
+                                            <br>
+                                            <br />
+
+                                            @*  <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar" style="width: 25%">42%</div>
+                                            </div> *@
+
+                                            <br>
+
+                                                <div class="row mt-4">
+                                                    <div class="col">
+                                                        <h6><img src="/img/calendar-check.jpg" alt="Image" class="img-fluid"> <span style="color: #B4B1C1; font-size:14px;">Start Date</span></h6>
+                                                        <p style="color: black;font-size:10px;">
+                                                            <input type="text" class="form-control" value="@task.StartDate" id="startDate">
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="col">
+                                                        <h6><img src="/img/calendar-check.jpg" alt="Image" class="img-fluid"><span style="color: #B4B1C1;font-size:14px;"> Appointment Date</span></h6>
+                                                        <p style="color: black;font-size:10px">
+                                                            <input type="text" class="form-control" value="@task.AppointmentDate" id="appointmentDate">
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="col">
+                                                        <h6><img src="/img/clock-outline.png" alt="Image" class="img-fluid"> <span style="color: #B4B1C1;font-size:14px;">Travel distance</span></h6>
+                                                        <p style="color: black;font-size:10px">
+                                                            <input type="text" class="form-control" value="@task.TravelDistance" id="travelDistance">
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="col">
+                                                        <h6><img src="/img/clock-outline.png" alt="Image" class="img-fluid"> <span style="color: #B4B1C1;font-size:14px;">Hours Spent</span></h6>
+                                                        <p style="color: black;font-size:10px">
+                                                            <input type="text" class="form-control" value="@task.HoursSpent" id="hoursSpent">
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                               
+
+                                                <div class="row mt-4">
+                                                    <div class="col">
+                                                     
+                                                    </div>
+                                                </div>
+
+                                               @*  <div class="row mt-4">
+                                                    <div class="col">
+                                                        <button class="btn btn-primary" onclick="saveChanges()">Save Changes</button>
+                                                    </div>
+                                                </div> *@
+
+                                                <script>
+                                                    function saveChanges() {
+                                                        var startDate = document.getElementById("startDate").value;
+                                                        var appointmentDate = document.getElementById("appointmentDate").value;
+                                                        var travelDistance = document.getElementById("travelDistance").value;
+                                                        var hoursSpent = document.getElementById("hoursSpent").value;
+                                                        // Get other task details similarly
+
+                                                        // Send AJAX request to update the task
+                                                        $.ajax({
+                                                            url: '/api/Main/task/', // Endpoint to handle update operation
+                                                            method: 'POST',
+                                                            contentType: 'application/json',
+                                                            data: JSON.stringify({
+                                                                taskId: '@task.Id', // Assuming you have taskId available
+                                                                startDate: startDate,
+                                                                appointmentDate: appointmentDate,
+                                                                travelDistance: travelDistance,
+                                                                hoursSpent: hoursSpent
+                                                                // Add other task details here
+                                                            }),
+                                                            success: function (response) {
+                                                                // Handle success response
+                                                                console.log('Task updated successfully');
+                                                            }
+
+                                                        });
+                                                    }
+                                                </script>
+
+
+                                            <div class="row align-items-center">
+                                                <div class="col">
+                                                    <p><img src="/img/Vector.png"> Serial Number </p>
+                                                   
+                                                    @foreach (var serialNumber in task.SerialNumbers)
+                                                    {
+                                                        <p style="margin-left: 5px;"><span style="color: #591796;">Device 1</span> <span style="color: black;">@(serialNumber ?? "N/A")</span> </p>
+                                                    }
+                                                </div>
+                                            </div>
+
+
+
+                                            <div class="row align-items-center">
+                                                <div class="col">
+                                                    <p><img src="/img/user-circle-outline.png">Contact Details</p>
+                                                    <p style="margin-left: 5px;"><span style="color: #B4B1C1;">Name of the person</span> <span style="margin-left:5px;">@(task.ContactName ?? "N/A")</span> </p>
+                                                    <p style="margin-left: 6px;"> <span style="color: #B4B1C1;">Designation</span><span style="margin-left:5px;">@(task.ContactDesignation ?? "N/A")</span> </p>
+                                                    <p style="margin-left: 5px;"> <span style="color: #B4B1C1;">+1 564 865 2135</span><span style="margin-left:5px;">@(task.ContactPhoneNumber ?? "N/A")</span> </p>
+                                                </div>
+                                            </div>
+
+
+
+                                            <div class="row align-items-center">
+                                                <div class="col">
+                                                    <p><img src="/img/user-settings-outline.png">Client Name </p>
+                                                    <p><span style="margin-left: 5px;">Equipment Upgrade - </span><span style="margin-left:5px;">@(task.ClientName ?? "N/A")</span></p>
+                                                </div>
+                                            </div>
+
+
+
+                                            <div class="col">
+                                                <p><img src="/img/map-pin-outline.png">Address </p>
+                                                <p style="margin-left: 5px;"><span style="margin-left:5px;">@(task.Address ?? "N/A")</span></p>
+                                            </div>
+                                        }
+                                    }
+
+                                    </div>
+                                    </div>
+                                 
+
+                                   
+
+                            <div class="tab-pane" id="simple-tabpanel-1" role="tabpanel" aria-labelledby="simple-tab-1">
+                                <div class="row">
+
+                                    <div class="col-lg-6" style="width:600px;">
+                                        <h4><p class="mb-0 des">Description</p></h4>
+
+                                        <textarea id="editor1" >@Model.Tutorials.FirstOrDefault()?.Description</textarea>
+
+
+                                       
+                                    </div>
+                                    <div class="row">
+                                    <div class="col-lg-6">
+                                        <h4><p class="mb-0 essence">Essence of Assessment</p></h4>
+                                        <ul>
+                                                @foreach (var tutorial in Model.Tutorials)
+                                                {
+                                                    foreach (var item in tutorial.EssenceOfAssessment.Split(",", StringSplitOptions.RemoveEmptyEntries))
+                                                    {
+                                                        var cleanedItem = item.Trim().TrimStart('[').TrimEnd(']').Trim('"');
+                                                        <li class="list-group-item"><img src="/img/tick-circle.png" alt="Image" style="height: 20px; margin-right: 5px;"> @cleanedItem</li>
+                                                    }
+                                                }
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+
+                                
+                                
+                            <div class="tab-pane" id="simple-tabpanel-2" role="tabpanel" aria-labelledby="simple-tab-2">
+                                <div class="row">
+                                    <div class="col-7">
+                                        <div class="button-group mb-3">
+                                        </div>
+                                        <button class="btn btn-primary" onclick="openActivityModal()">Add Activity</button>
+                                        <h6 class="task">1 AUG, 2023</h6>
+                                        <div class="container">
+
+                                            @foreach (var commentsForSection in Model.Comments)
+                                            {
+                                                <div class="step completed">
+                                                    <div class="v-stepper">
+                                                        <div class="circle"></div>
+                                                        <div class="line"></div>
+                                                    </div>
+
+                                                    @foreach (var comment in commentsForSection)
+                                                    {
+                                                        <div class="comment">
+                                                            <p>@comment.Text</p>
+                                                            <p>@comment.Instructions</p>
+                                                            <img src="/img/Avatar (3).png" alt="Profile Image">@comment.Author
+                                                            <!-- Add other comment properties as needed -->
+                                                        </div>
+                                                        <br />
+                                                    }
+                                                </div>
+                                            }
+
+                                            <div class="step">
+                                                <div class="v-stepper">
+                                                    <div class="circle img-cir"></div>
+                                                    <div class="line"></div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                    <div class="col-4">
+                                        <div class="modal fade" id="commentModal" tabindex="-1" role="dialog" aria-labelledby="commentModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="commentModalLabel">Add Comment</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form id="commentForm">
+                                                            <div class="form-group">
+                                                                <label for="commentText">Text</label>
+                                                                <textarea class="form-control" id="commentText" name="text"></textarea>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="commentInstructions">Instructions</label>
+                                                                <input type="text" class="form-control" id="commentInstructions" name="instructions">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="commentAuthor">Author</label>
+                                                                <input type="text" class="form-control" id="commentAuthor" name="author">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="commentProfileImage">Profile Image URL</label>
+                                                                <input type="text" class="form-control" id="commentProfileImage" name="profileImage">
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-primary" onclick="addComment()">Add Comment</button>
+
+                                                        <button type="button" class="btn btn-secondary" onclick="closeActivityModal()">Close</button>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                   
+
+                               
+
+                            <div class="tab-pane" id="simple-tabpanel-3" role="tabpanel" aria-labelledby="simple-tab-3">
+                                <div class="row">
+                                    <div class="col serial mt3">
+                                        <div class="section">
+                                           
+                                            @foreach (var updateInfo in Model.UpdateInfos)
+                                            {
+                                                <p style="color: #B4B1C1;"><span style="color: #B4B1C1;">Update Number :</span> @updateInfo.UpdateNumber</p>
+                                                <p><img src="/img/Vector.png"> Serial Number</p>
+                                                <p style="margin-left: 5px;"> <span style="color: #591796;">Device 1 :</span>  <span class="dev" style="color:black;">@updateInfo.SerialNumber</span> </p>
+
+                                                <p><img src="/img/user-circle-outline.png">Contact Details </p>
+                                                <p style="margin-left: 5px; color:black"><span style="color: #B4B1C1;">Name of the person</span>   <span class="details" style= "color:black;">@updateInfo.ContactName</span></p>
+                                                <p style="margin-left: 6px;"> <span style="color: #B4B1C1;">Designation</span>  <span class="details" style="color:black;">@updateInfo.Designation</span> </p>
+                                                <p style="margin-left: 5px">
+                                                    <span style="color: #B4B1C1;">+1 564 865 2135</span>  <span class="details" style="color:black;">@updateInfo.PhoneNumber</span>
+
+                                                </p>
+                                                <p style="margin-left: 5px;"> <span class="details" style="color:black;">@updateInfo.Email</span></p>
+
+                                                <p><img src="/img/user-settings-outline.png">Client Name</p>
+                                                <p style="margin-left: 5px;"><span style="margin-left: 5px;">Equipment Upgrade - </span>@updateInfo.ClientName</p>
+
+                                                <p><img src="/img/map-pin-outline.png">Address</p>
+                                                <p style="margin-left: 5px;">@updateInfo.Address</p>
+                                            }
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="simple-tabpanel-4" role="tabpanel" aria-labelledby="simple-tab-4">
+                               
+                                <input placeholder="Input" type="text" id="myInput">
+
+
+                                @if (Model.Documents != null && Model.Documents.Any())
+                                {
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Name of the document</th>
+                                                <th>Category</th>
+                                                <th>Action</th>
+                                                <!-- Add more document columns as needed -->
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach (var document in Model.Documents)
+                                            {
+                                               
+                                                    <tr>
+                                                        <td>@document.Name</td>
+                                                        <td>@document.Category</td>
+                                                    <td>
+                                                        <a href="@document.DownloadUrl" style="color:#591796;font-weight: bold; ">Download</a> |
+                                                        <a href="@document.ViewUrl" style="color:#591796;font-weight: bold; ">View</a>
+                                                    </td>
+                                                    </tr>
+                                                }
+                                            
+                                        </tbody>
+                                    </table>
+                                }
+                                else
+                                {
+                                    <p>No documents available.</p>
+                                }
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                               </div>
+                               
+                                
+                              
+
+
+
+
+
+
+
+
+
+    <div>
+        <div class="row justify-content-end">
+            <div class="col-lg-3 " id="upload_Docs" style="display:none;">
+                <div class="card mt-5 ms-5">
+                    <div class="card-body">
+                        <h6 class="card-title">
+                            Upload
+
+                        </h6>
+                        <form id="uploadForm" enctype="multipart/form-data">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="name" placeholder="Document Name">
+                            </div>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" id="category" placeholder="Document Category">
+                            </div>
+                            <div class="input-group mb-3">
+                                <input type="file" class="form-control" id="file">
+                            </div>
+                            <button type="button" id="uploadButton" onclick="uploadDocument()">Upload</button>
+                        </form>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+        
+    </div>
+    <script>
+        function uploadDocument() {
+                                           var formData = new FormData();
+                                           var file = document.getElementById('file').files[0];
+                                           var name = document.getElementById('name').value;
+                                           var category = document.getElementById('category').value;
+
+                                           formData.append('file', file);
+                                           formData.append('name', name);
+                                           formData.append('category', category);
+
+                                           $.ajax({
+                                               url: 'https://localhost:7017/api/Main/saveDocument',
+                                               type: 'POST',
+                                               data: formData,
+                                               processData: false,
+                                               contentType: false,
+                                               success: function (response) {
+                                                   console.log('Document uploaded successfully:', response);
+
+                                               },
+                                               error: function (xhr, status, error) {
+                                                   console.error('Error uploading document:', error);
+
+                                               }
+                                           });
+                                       }
+
+
+
+
+
+
+
+
+               function closeActivityModal() {
+                   $('#commentModal').modal('hide');
+               }
+
+
+
+                   function openActivityModal() {
+                       $('#commentModal').modal('show');
+                   }
+                       function addComment() {
+                           var formData = {
+                               text: $('#commentText').val(),
+                               instructions: $('#commentInstructions').val(),
+                               author: $('#commentAuthor').val(),
+                               profileImage: $('#commentProfileImage').val()
+                           };
+
+                           $.ajax({
+                               url: '/api/Main/comment',
+                               type: 'POST',
+                               contentType: 'application/json',
+                               data: JSON.stringify(formData),
+                               success: function (response) {
+                                   console.log('Comment added successfully:', response);
+                               },
+                               error: function (xhr, status, error) {
+                                   console.error('Error adding comment:', error);
+                               }
+                           });
+                       }
+
+
+
+
+
+
+
+
+
+
+
+                       CKEDITOR.replace('editor1');
+
+    </script>
+
+</body>
+
+</html>
+

@@ -1,0 +1,562 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+
+    <link rel="stylesheet" href="/css/dashboard.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #chart {
+            max-width: 350px;
+            margin: 35px auto;
+            padding-left: 40px;
+            /* Increase left padding */
+        }
+
+        .chart1 {
+            position: relative;
+            bottom: 32%;
+        }
+
+        .card {
+            /* width: 242px; */
+            /* height: 144.55px; */
+
+            margin: 2px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            /* overflow: hidden; */
+            margin-top: 20px;
+            font-size: 14px;
+            /* margin-left: 30px; */
+        }
+
+        .card1 {
+            width: 315px;
+            height: 144.55px;
+        }
+
+        .card3 {
+            width: 242px;
+            height: 144.55px;
+        }
+
+        .card2 {
+            width: 280.47px;
+            height: 385.81px;
+            gap: 0px;
+            opacity: 0px;
+        }
+
+        /* .card img {
+                    width: 30px;
+                    height: auto;
+                } */
+
+        /* .card-content {
+                    padding: 20px;
+                }
+
+                .card-content h2 {
+                    margin-top: 0;
+                }
+
+                .card-content p {
+                    margin: 10px 0;
+                }
+
+                .card-content h2 {
+                    margin-top: 0;
+                    position: relative;
+                }
+
+                .card-content h2 img {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                } */
+
+        /* .image-with-text {
+                    display: flex;
+                    align-items: center;
+                    /* Align items vertically */
+        /* } */
+
+        .image-with-text img {
+            /* width: 50px; */
+            /* Adjust the width as needed */
+            /* height: auto; */
+            /* Maintain aspect ratio */
+            /* margin-right: 10px; */
+            /* Adjust margin as needed */
+        }
+
+        .im {
+            margin-left: 20px;
+        }
+
+        .ima {
+            margin-left: 30px;
+        }
+
+        .im1 {
+        }
+
+        .im2 {
+            width: 330px;
+            height: 310px;
+        }
+
+        .cad {
+            margin-top: -60px;
+        }
+
+        .row-data {
+            padding-left: none;
+            padding-right: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="col-12">
+        <div class="row ">
+            <div class="col-lg-2 p-0 container-fluid land">
+                <div class="sidebar position-fixed side pt-2">
+                    <img src="/img/Logo.png" class="img-thumbnail mb-4 small-image" alt="logo">
+                    <a href="#Dashboard" class="board"><img class="me-2" src="/img/apps.png" />Dashboard</a>
+                    <a href="Dashboard13.html" class="das fs-14">
+                        <img class="me-2"
+                             src="/img/briefcase 04.png" />Recalls
+                    </a>
+                    <a href="#Schedules" class="das fs-14">
+                        <img class="me-2"
+                             src="/img/notes 01.jpg" />Schedules
+                    </a>
+                    <a href="#Tracking" class="das fs-14">
+                        <img class="me-2"
+                             src="/img/Vector (2).png" />Tracking
+                    </a>
+                    <a href="#Reports" class="das fs-14">
+                        <img class="me-2"
+                             src="/img/notepad.jpg" />Reports
+                    </a>
+                    <a href="#Manage Users" class="das fs-14">
+                        <img class="me-2"
+                             src="/img/users 02.jpg" />Manage Users
+                    </a>
+                    <a href="#Candidates" class="das fs-14">
+                        <img class="me-2"
+                             src="/img/can.jpg" />Candidates
+                    </a>
+                    <a href="#Manual Documents" class="das fs-14">
+                        <img class="me-2"
+                             src="/img/man.jpg" />Manual Documents
+                    </a>
+                    <a href="#Downloads" class="das fs-14">
+                        <img class="me-2"
+                             src="/img/down.jpg" />Downloads
+                    </a>
+                    <a href="#Payroll" class="das fs-14"><img class="me-2" src="/img/pay.jpg" />Payroll</a>
+                    <a href="#Setting" class="das fs-14">
+                        <img class="me-2"
+                             src="/img/setting.jpg" />Setting
+                    </a><br>
+                    <button id="lightModeButton" type="button" class="btn btn-purple"
+                            style="background-color: #591796; color: #ffffff;">
+                        <img class="me-2"
+                             src="/img/sun.png" />Light
+                    </button>
+
+                    <button id="darkModeButton" type="button" class="btn btn-white">
+                        <img class="me-2"
+                             src="/img/moon-outline.png" />Dark
+                    </button>
+
+                </div>
+            </div>
+            <div class="col-lg-10 ">
+                <div class=" container-fluid land p-4">
+                    <nav class="navbar bg-white" style="z-index: 999;">
+                        <div class="container-fluid">
+                            <form class="" role="search">
+                                <input class="form-control me-4  " type="search" placeholder="Search"
+                                       aria-label="Search">
+                            </form>
+
+                            <div class="col-lg-4">
+                                <form class="d-flex align-items-center justify-content-between" role="search">
+
+                                    <div class="d-flex align-items-center">
+                                        <img src="/img/moon-outline.png" style="height: 24px;"
+                                             class="img-thumbnail mb-0 me-2" alt="...">
+                                        <img src="/img/bell-outline.png" style="height: 24px;"
+                                             class="img-thumbnail mb-0 me-2" alt="...">
+                                        <a href="#" class="nav-link  d-flex align-items-center me-2" id="" role=""
+                                           data-toggle="" aria-haspopup="true" aria-expanded="false">
+                                            <img src="/img/Avatar.png" style="height: 20px; margin-right: 0;"
+                                                 class="profile-image" alt="Profile Image">
+                                        </a>
+                                        <a href="Login.html" type="button" class="btn btn-primary btn-sm" style="background-color:white; color:black; height: 27px;">Logout</a>
+
+                                    </div>
+
+                                </form>
+                            </div>
+
+                        </div>
+                    </nav>
+
+
+                </div>
+                <div class="col-lg-12">
+                    <div class="row mt-5 ms-3 ">
+                        <div class="col-lg-3 card card3 ">
+                            <div class="image-with-text">
+                                <img src="/img/Button (2).png" alt="Image 1">
+                                <span>Completed Recalls</span>
+                            </div>
+                            <div class="card-content">
+                                <h2>230 <img src="/img/Button (1).svg" alt="Image 1"></h2>
+
+                                <p>Update: July 16, 2023</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 card card3 ">
+                            <div class="image-with-text">
+                                <img src="/img/Button (5).png" alt="Image 1">
+                                <span>Scheduled Recalls</span>
+                            </div>
+                            <div class="card-content">
+                                <h2>306 <img src="/img/Button.svg" alt="Image 1"></h2>
+
+                                <p>Update: July 16, 2023</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 card card3">
+                            <div class="image-with-text">
+                                <img src="/img/Button (3).png" alt="Image 1">
+                                <span>Total No of Work Hours</span>
+                            </div>
+                            <div class="card-content">
+                                <h2>9036 <img src="/img/Button (1).svg" alt="Image 1"></h2>
+
+                                <p>Update: July 16, 2023</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 card card3">
+                            <div class="image-with-text">
+                                <img src="/img/Button (4).png" alt="Image 1">
+                                <span>Failed Recalls</span>
+                            </div>
+                            <div class="card-content">
+                                <h2>18 <img src="/img/Button.svg" alt="Image 1"></h2>
+
+                                <p>Update: July 16, 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-8 col-8">
+                        <div class="card im">
+                            <div class="chart-container">
+                                <p>Recalls Summary</p>
+                                <div id="chart1"></div>
+
+                            </div>
+
+
+                            <div class="me-2" id="context-menu" style="display: none;">
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-4 col-4 ">
+                        <div class="card card2 im">
+
+                            <h5 class="fw-600 text-center">Audience satisfaction</h5>
+                            <canvas id="myChart1"></canvas>
+                            <div class="chart2">
+                                <h3 class="text-center">😊</h3>
+                                <h3 class="text-center fs-4 fw-600 lh-small">64.87%</h3>
+                                <h6 class="fs-13 text-center">Based on likes</h6>
+                                <div id="monthNames" style="text-align: center; margin-top: 10px;"></div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="row mt-5 ms-3 ">
+                            <div class="col-lg-3  card card1 ">
+                                <div class="image-with-text">
+                                    <img src="/img/Eye.svg" alt="Image 1" style="width: 25px;">
+                                    <span>Impressions</span>
+                                </div>
+                                <div class="card-content">
+                                    <h2>11,875 <img src="/img/Frame 33.svg" alt="Image 1" style="width: 70px; height: 70px;"></h2>
+                                    <p><img src="/img/Frame 26.svg"></p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 card card1 im1">
+                                <div class="image-with-text">
+                                    <img src="/img/Eye.svg" alt="Image 1" style="width: 25px;">
+                                    <span>Impressions</span>
+                                </div>
+                                <div class="card-content">
+                                    <h2>11,875 <img src="/img/Frame 33.svg" alt="Image 1" style="width: 70px; height: 70px;"></h2>
+                                    <p><img src="/img/Frame 26.svg"></p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3  card card1 ">
+                                <div class="image-with-text">
+                                    <img src="/img/Eye.svg" alt="Image 1" style="width: 25px;">
+                                    <span>Impressions</span>
+                                </div>
+                                <div class="card-content">
+                                    <h2>11,875 <img src="/img/Frame 33.svg" alt="Image 1" style="width: 70px; height: 70px;"></h2>
+                                    <p><img src="/img/Frame 26.svg"></p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 card card1 im1">
+                                <div class="image-with-text">
+                                    <img src="/img/Eye.svg" alt="Image 1" style="width: 25px;">
+                                    <span>Impressions</span>
+                                </div>
+                                <div class="card-content">
+                                    <h2>11,875 <img src="/img/Frame 33.svg" alt="Image 1" style="width: 70px; height: 70px;"></h2>
+                                    <p><img src="/img/Frame 26.svg"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-4 mt-5 margin-left:2rem">
+                        <div class="card card3 im2">
+                            <div id="chart">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+                <script>
+
+                    var options = {
+                        chart: {
+                            height: 280,
+                            type: "area",
+                            toolbar: {
+                                show: false
+                            }
+                        },
+                        title: {
+                            text: 'Sales Summary',
+
+                            style: {
+                                fontSize: '20px',
+                                color: '#591796',
+                            },
+                            offsetX: 0,
+                            offsetY: 20,
+                        },
+                        dataLabels: {
+                            enabled: false,
+                        },
+                        series: [
+                            {
+                                name: "Series 1",
+                                data: [0, 20, 40, 60, 40, 20, 0, 0],
+                            },
+                        ],
+                        fill: {
+                            type: "gradient",
+                            gradient: {
+                                shadeIntensity: 1,
+                                opacityFrom: 0.7,
+                                opacityTo: 0.9,
+                                stops: [0, 90, 100],
+                            },
+                            colors: ['#591796'],
+                        },
+                        stroke: {
+                            curve: 'smooth',
+                            colors: ['#591796'],
+                            width: 2,
+                        },
+                        xaxis: {
+                            categories: [
+                                "Sun",
+                                "Mon",
+                                "Tue",
+                                "Wed",
+                                "Thu",
+                                "Fri",
+                                "Sat",
+                                "Sun",
+                            ],
+                        },
+                        yaxis: {
+                            min: 0,
+                            max: 60,
+                        },
+                        grid: {
+                            borderColor: '#ccc',
+                            strokeDashArray: 4,
+                            padding: {
+                                bottom: 20
+                            }
+                        }
+                    };
+
+                    var chart = new ApexCharts(document.querySelector("#chart"), options);
+
+                    chart.render();
+                </script>
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        var options = {
+                            series: [
+                                {
+                                    name: "Completed",
+                                    data: [140, 130, 120, 110, 95, 110, 120, 130, 140, 130, 120, 110, 100]
+                                },
+                                {
+                                    name: "Pending",
+                                    data: [120, 110, 100, 90, 75, 90, 100, 110, 120, 110, 100, 90, 80]
+                                },
+                                {
+                                    name: "Inprogress",
+                                    data: [100, 90, 80, 70, 55, 70, 80, 90, 100, 90, 80, 70, 60]
+                                }
+                            ],
+                            chart: {
+                                type: "area",
+                                height: 350
+                            },
+                            dataLabels: {
+                                enabled: false
+                            },
+                            xaxis: {
+                                categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+                            },
+                            yaxis: {
+                                labels: {
+                                    formatter: function (value) {
+                                        return "$" + value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                                    }
+                                }
+                            },
+                            colors: ["#4CAF50", "#FFC107", "#2196F3"],
+                            sparkline: {
+                                enabled: true,
+                                fill: {
+                                    colors: ['#4CAF50', '#FFC107', '#2196F3']
+                                }
+                            }
+                        };
+
+                        var chart = new ApexCharts(document.querySelector("#chart1"), options);
+                        chart.render();
+
+
+                        var contextMenu = document.getElementById("context-menu");
+
+                        window.addEventListener("contextmenu", function (e) {
+                            e.preventDefault();
+                            contextMenu.style.display = "block";
+                            contextMenu.style.left = e.pageX + "px";
+                            contextMenu.style.top = e.pageY + "px";
+                        });
+
+                        window.addEventListener("click", function () {
+                            contextMenu.style.display = "none";
+                        });
+                    });
+
+                </script>
+                <script>
+
+                    const ctx1 = document.getElementById('myChart1');
+                    const monthNamesContainer = document.getElementById('monthNames');
+                    const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May'];
+                    const data = [70, 20];
+
+                    new Chart(ctx1, {
+                        type: 'doughnut',
+                        data: {
+                            labels: [],
+                            datasets: [{
+                                label: '# of Votes',
+                                data: data,
+                                borderWidth: 1,
+                                backgroundColor: [
+                                    'rgba(89, 23, 150, 1)',
+                                    '#F1F1F4',
+                                ],
+                                borderRadius: 8,
+                            }]
+                        },
+                        options: {
+                            cutout: '85%',
+                            aspectRatio: 2.9,
+                            circumference: 180,
+                            rotation: 270
+                        }
+                    });
+
+
+                    const lineAbove = document.createElement('hr');
+                    lineAbove.style.width = '50%';
+                    lineAbove.style.margin = '10px auto';
+                    monthNamesContainer.appendChild(lineAbove);
+
+
+                    months.forEach((month, index) => {
+                        const span = document.createElement('span');
+                        span.textContent = month;
+                        monthNamesContainer.appendChild(span);
+
+                        if (index < months.length - 1) {
+                            const space = document.createElement('span');
+                            space.textContent = ' ';
+                            monthNamesContainer.appendChild(space);
+                        }
+                    });
+
+
+                    const lineBelow = document.createElement('hr');
+                    lineBelow.style.width = '50%';
+                    lineBelow.style.margin = '10px auto';
+                    monthNamesContainer.appendChild(lineBelow);
+                </script>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+﻿@model LoginViewModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../Reclyte/css/dashboard.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <style>
+        /* Add your custom styles here */
+        .login-register-card {
+            max-width: 400px;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+
+        .sidebar {
+            background: #FBF9FF;
+            text-align: left;
+        }
+
+            .sidebar .card-body {
+                padding: 0;
+            }
+
+            .sidebar img {
+                max-width: 100%;
+                height: auto;
+                background: #FBF9FF;
+            }
+    </style>
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-7 d-none d-sm-block">
+                <div class="card rounded-4 m-3 my-4 p-3 sidebar">
+                    <div class="row">
+                        <h4 class="ms-5 fs-1 ps-5" style="color: #591796; ">
+                            A smart Recall
+                            <br>solution for all your
+                            <br>product needs.
+                        </h4>
+                    </div>
+                    <div class="row mx-5">
+                        <p class="mx-4" style="font-size: 13px;">The focus is now on providing total supply chain solutions which encompass everything from material sourcing and manufacturing to storage, distribution and support services</p>
+                    </div>
+                    <img class="mx-auto" width="400" height="400" src="/img/Layer_2.png" alt="Description of image">
+                </div>
+            </div>
+            <!-- Login and Register Section -->
+            <div class="col-md-5">
+                <div class="card border-0 px-4 py-2 login-register-card">
+                    <div class="card-body mt-5" id="loginForm">
+                        <div class="mb-4">
+                            <img src="/img/Logo.png" alt="" height="34" width="150" class="mt-1" />
+                        </div>
+                        <h4 class="fw-bold mb-4">Welcome👋</h4>
+                        <label class=" d-block">Please login here</label>
+                        <form action="@Url.Action("Login", "Home")" method="post">
+                            <div class="mb-3">
+                                <input type="email" class="form-control" id="loginEmail" name="Email" placeholder="name@example.com" style="border-color: #591796;" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="password" class="form-control" id="loginPassword" name="Password" placeholder="Password" style="border-color: #591796;" required>
+                            </div>
+                            <div class="mb-3 d-flex justify-content-between align-items-center">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="rememberMe">
+                                    <label class="form-check-label" for="rememberMe">Remember me</label>
+                                </div>
+                                <a href="#" class="text-decoration-none" style="color: #591796;">Forgot Password?</a>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100 mb-3" style="background-color: #591796;">Login</button>
+                            <button type="button" class="btn btn-outline-secondary w-100 mb-3" onclick="showRegisterForm()">Register</button>
+                            <hr class="mb-3" style="border-top: 1px solid #ccc;">
+                            <button type="button" class="btn btn-outline-secondary w-100">
+                                <img class="me-2 pic" src="/img/Avatar (1).png" alt="google">Sign in with Google
+                            </button>
+                            <hr class="my-3" style="border-top: 1px solid #ccc;">
+                            <button type="button" class="btn btn-outline-secondary w-100">
+                                <img class="me-2 pic" src="/img/Avatar (2).png" alt="apple">Sign in with Apple
+                            </button>
+                        </form>
+                    </div>
+                    <div class="card-body mt-5" id="registerForm" style="display:none;">
+                        <div class="mb-4">
+                            <img src="/img/Logo.png" alt="" height="34" width="150" class="mt-1" />
+                        </div>
+                        <h4 class="fw-bold mb-4">Register</h4>
+                        <form>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="registerFullName" placeholder="Full Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" id="registerEmail" placeholder="Email" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="password" class="form-control" id="registerPassword" placeholder="Password" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="password" class="form-control" id="registerConfirmPassword" placeholder="Confirm Password" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100 mb-3">Register</button>
+                        </form>
+                        <hr class="my-4">
+                        <p class="text-center mb-0">Already have an account? <a href="#" onclick="showLoginForm()">Login</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function showRegisterForm() {
+            document.getElementById('loginForm').style.display = 'none';
+            document.getElementById('registerForm').style.display = 'block';
+        }
+        function showLoginForm() {
+            document.getElementById('registerForm').style.display = 'none';
+            document.getElementById('loginForm').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

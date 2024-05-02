@@ -1,0 +1,613 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Loginregister.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Loginregister.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\css\\dashboard.css",
+      "PackagePath": "staticwebassets\\css\\dashboard.css"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\css\\style1.css",
+      "PackagePath": "staticwebassets\\css\\style1.css"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\Avatar (1).png",
+      "PackagePath": "staticwebassets\\img\\Avatar (1).png"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\Avatar (2).png",
+      "PackagePath": "staticwebassets\\img\\Avatar (2).png"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\Avatar (3).png",
+      "PackagePath": "staticwebassets\\img\\Avatar (3).png"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\Avatar (4).png",
+      "PackagePath": "staticwebassets\\img\\Avatar (4).png"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\Avatar.png",
+      "PackagePath": "staticwebassets\\img\\Avatar.png"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\Bottom Navigation Tab (1).png",
+      "PackagePath": "staticwebassets\\img\\Bottom Navigation Tab (1).png"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\Bottom Navigation Tab (2).png",
+      "PackagePath": "staticwebassets\\img\\Bottom Navigation Tab (2).png"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\Bottom Navigation Tab (3).png",
+      "PackagePath": "staticwebassets\\img\\Bottom Navigation Tab (3).png"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\Bottom Navigation Tab (4).png",
+      "PackagePath": "staticwebassets\\img\\Bottom Navigation Tab (4).png"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\Bottom Navigation Tab (5).png",
+      "PackagePath": "staticwebassets\\img\\Bottom Navigation Tab (5).png"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\Bottom Navigation Tab.png",
+      "PackagePath": "staticwebassets\\img\\Bottom Navigation Tab.png"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\Button (1).svg",
+      "PackagePath": "staticwebassets\\img\\Button (1).svg"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\Button (2).png",
+      "PackagePath": "staticwebassets\\img\\Button (2).png"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\Button (3).png",
+      "PackagePath": "staticwebassets\\img\\Button (3).png"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\Button (4).png",
+      "PackagePath": "staticwebassets\\img\\Button (4).png"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\Button (5).png",
+      "PackagePath": "staticwebassets\\img\\Button (5).png"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\Button.png",
+      "PackagePath": "staticwebassets\\img\\Button.png"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\Button.svg",
+      "PackagePath": "staticwebassets\\img\\Button.svg"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\Ellipse 1099.png",
+      "PackagePath": "staticwebassets\\img\\Ellipse 1099.png"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\Eye.svg",
+      "PackagePath": "staticwebassets\\img\\Eye.svg"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\Frame 1000001137.png",
+      "PackagePath": "staticwebassets\\img\\Frame 1000001137.png"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\Frame 26.svg",
+      "PackagePath": "staticwebassets\\img\\Frame 26.svg"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\Frame 33.svg",
+      "PackagePath": "staticwebassets\\img\\Frame 33.svg"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\Frame 71.png",
+      "PackagePath": "staticwebassets\\img\\Frame 71.png"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\Group 3.png",
+      "PackagePath": "staticwebassets\\img\\Group 3.png"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\Group 4.png",
+      "PackagePath": "staticwebassets\\img\\Group 4.png"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\Icon.png",
+      "PackagePath": "staticwebassets\\img\\Icon.png"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\Layer_2.png",
+      "PackagePath": "staticwebassets\\img\\Layer_2.png"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\Logo.png",
+      "PackagePath": "staticwebassets\\img\\Logo.png"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\Search.png",
+      "PackagePath": "staticwebassets\\img\\Search.png"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\Task.png",
+      "PackagePath": "staticwebassets\\img\\Task.png"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\Task1.png",
+      "PackagePath": "staticwebassets\\img\\Task1.png"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\Vector (2).png",
+      "PackagePath": "staticwebassets\\img\\Vector (2).png"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\Vector 2527.png",
+      "PackagePath": "staticwebassets\\img\\Vector 2527.png"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\Vector.jpg",
+      "PackagePath": "staticwebassets\\img\\Vector.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\Vector.png",
+      "PackagePath": "staticwebassets\\img\\Vector.png"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\adjustments.svg",
+      "PackagePath": "staticwebassets\\img\\adjustments.svg"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\apps.png",
+      "PackagePath": "staticwebassets\\img\\apps.png"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\arrow-sort-outline.png",
+      "PackagePath": "staticwebassets\\img\\arrow-sort-outline.png"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\attach-circle.png",
+      "PackagePath": "staticwebassets\\img\\attach-circle.png"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\attach-circle.svg",
+      "PackagePath": "staticwebassets\\img\\attach-circle.svg"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\bell-outline.png",
+      "PackagePath": "staticwebassets\\img\\bell-outline.png"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\briefcase 04.png",
+      "PackagePath": "staticwebassets\\img\\briefcase 04.png"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\calendar 01.png",
+      "PackagePath": "staticwebassets\\img\\calendar 01.png"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\calendar-check.jpg",
+      "PackagePath": "staticwebassets\\img\\calendar-check.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\calendar-day-outline.png",
+      "PackagePath": "staticwebassets\\img\\calendar-day-outline.png"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\can.jpg",
+      "PackagePath": "staticwebassets\\img\\can.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\chevron-down.png",
+      "PackagePath": "staticwebassets\\img\\chevron-down.png"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\clock-outline.png",
+      "PackagePath": "staticwebassets\\img\\clock-outline.png"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\del.jpg",
+      "PackagePath": "staticwebassets\\img\\del.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\dept.jpg",
+      "PackagePath": "staticwebassets\\img\\dept.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\doc.jpg",
+      "PackagePath": "staticwebassets\\img\\doc.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\down.jpg",
+      "PackagePath": "staticwebassets\\img\\down.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\edit.jpg",
+      "PackagePath": "staticwebassets\\img\\edit.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\emp.jpg",
+      "PackagePath": "staticwebassets\\img\\emp.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\filter.jpg",
+      "PackagePath": "staticwebassets\\img\\filter.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\folder-open.png",
+      "PackagePath": "staticwebassets\\img\\folder-open.png"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\hol.jpg",
+      "PackagePath": "staticwebassets\\img\\hol.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\home.png",
+      "PackagePath": "staticwebassets\\img\\home.png"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\icons.png",
+      "PackagePath": "staticwebassets\\img\\icons.png"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\man.jpg",
+      "PackagePath": "staticwebassets\\img\\man.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\map-pin-outline.png",
+      "PackagePath": "staticwebassets\\img\\map-pin-outline.png"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\moon-outline.png",
+      "PackagePath": "staticwebassets\\img\\moon-outline.png"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\moon.jpg",
+      "PackagePath": "staticwebassets\\img\\moon.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\more-vertical.svg",
+      "PackagePath": "staticwebassets\\img\\more-vertical.svg"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\notepad.jpg",
+      "PackagePath": "staticwebassets\\img\\notepad.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\notes 01.jpg",
+      "PackagePath": "staticwebassets\\img\\notes 01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\pay.jpg",
+      "PackagePath": "staticwebassets\\img\\pay.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\photo (2).png",
+      "PackagePath": "staticwebassets\\img\\photo (2).png"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\photo (3).png",
+      "PackagePath": "staticwebassets\\img\\photo (3).png"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\photo (4).png",
+      "PackagePath": "staticwebassets\\img\\photo (4).png"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\photo (5).png",
+      "PackagePath": "staticwebassets\\img\\photo (5).png"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\photo (6).png",
+      "PackagePath": "staticwebassets\\img\\photo (6).png"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\photo.png",
+      "PackagePath": "staticwebassets\\img\\photo.png"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\search-outline.png",
+      "PackagePath": "staticwebassets\\img\\search-outline.png"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\setting.jpg",
+      "PackagePath": "staticwebassets\\img\\setting.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\sun.png",
+      "PackagePath": "staticwebassets\\img\\sun.png"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\tick-circle.png",
+      "PackagePath": "staticwebassets\\img\\tick-circle.png"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\user-circle-outline.png",
+      "PackagePath": "staticwebassets\\img\\user-circle-outline.png"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\user-settings-outline.png",
+      "PackagePath": "staticwebassets\\img\\user-settings-outline.png"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\user.jpg",
+      "PackagePath": "staticwebassets\\img\\user.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\users 02.jpg",
+      "PackagePath": "staticwebassets\\img\\users 02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\video call.png",
+      "PackagePath": "staticwebassets\\img\\video call.png"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\view.jpg",
+      "PackagePath": "staticwebassets\\img\\view.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\img\\voice call.png",
+      "PackagePath": "staticwebassets\\img\\voice call.png"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\PAC-LAP-083\\source\\repos\\Loginregister\\Loginregister\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Loginregister.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Loginregister.props",
+      "PackagePath": "build\\Loginregister.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Loginregister.props",
+      "PackagePath": "buildMultiTargeting\\Loginregister.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Loginregister.props",
+      "PackagePath": "buildTransitive\\Loginregister.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

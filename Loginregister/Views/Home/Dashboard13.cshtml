@@ -1,0 +1,1316 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model Loginregister.Models.Dashboard13ViewModel
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href='/css/dashboard.css'>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- desktop verion -->
+    <div class="container-fluid land d-none d-md-block">
+        <div class="row">
+            <div class="col-lg-2 p-0">
+                <div class="sidebar position-fixed side pt-2">
+                    <img src="/img/Logo.png" class="img-thumbnail mb-4 small-image"
+                         alt="logo">
+                    <a href="Dashboard1.html" class="board"><img class="me-2" src="/img/apps.png" />Dashboard</a>
+                 <a href="#" class="das fs-14" id="recallsLink">
+    <img class="me-2" src="/img/briefcase 04.png" />Recalls
+</a>
+                    <a href="#Schedules" class="das fs-14"><img class="me-2" src="/img/notes 01.jpg" />Schedules</a>
+                    <a href="#Tracking" class="das fs-14"><img class="me-2" src="/img/Vector (2).png" />Tracking</a>
+                    <a href="#Reports" class="das fs-14"><img class="me-2" src="/img/notepad.jpg" />Reports</a>
+                    <a href="#Manage Users" class="das fs-14"><img class="me-2" src="/img/users 02.jpg" />Manage Users</a>
+                    <a href="#Candidates" class="das fs-14"><img class="me-2" src="/img/can.jpg" />Candidates</a>
+                    <a href="#Manual Documents" class="das fs-14"><img class="me-2" src="/img/man.jpg" />Manual Documents</a>
+                    <a href="#Downloads" class="das fs-14"><img class="me-2" src="/img/down.jpg" />Downloads</a>
+                    <a href="#Payroll" class="das fs-14"><img class="me-2" src="/img/pay.jpg" />Payroll</a>
+                    <a href="#Setting" class="das fs-14"><img class="me-2" src="/img/setting.jpg" />Setting</a><br>
+                    <button id="lightModeButton" type="button" class="btn btn-purple"><img class="me-2" src="/img/sun.png" />Light</button>
+
+                    <button id="darkModeButton" type="button" class="btn btn-white"><img class="me-2" src="/img/moon.jpg" />Dark</button>
+
+                </div>
+            </div>
+            <div class="col-lg-10 p-4 ">
+                <nav class="navbar bg-white" style="z-index: 999;">
+                    <div class="container-fluid">
+                        <form class="" role="search">
+                            <input class="form-control me-4  " type="search" placeholder="Search" aria-label="Search">
+                        </form>
+
+                        <div class="col-lg-4">
+                            <form class="d-flex align-items-center justify-content-between" role="search">
+
+                                <div class="d-flex align-items-center" style="padding-left: 100px;">
+                                    <img src="/img/moon-outline.png" style="height: 24px;" class="img-thumbnail mb-0 me-2" alt="...">
+                                    <img src="/img/bell-outline.png" style="height: 24px;" class="img-thumbnail mb-0 me-2" alt="...">
+                                    <a href="#" class="nav-link  d-flex align-items-center me-1" id="" role="" data-toggle="" aria-haspopup="true" aria-expanded="false">
+                                        <img src="/img/Avatar.png" style="height: 20px; margin-right: 0;" class="profile-image" alt="Profile Image">
+                                    </a>
+                                    <button type="button" class="btn btn-primary btn-sm">Logout</button>
+
+                                </div>
+
+                            </form>
+                        </div>
+
+                    </div>
+                </nav>
+                <div class="card card_das col-lg-10 ">
+                    <div class="card-body">
+                        <div class="row">
+
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link active" id="simple-tab-0" data-bs-toggle="tab"
+                                       href="#simple-tabpanel-0" role="tab" aria-controls="simple-tabpanel-0" aria-selected="true" style="color: #591796;">Discussion</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="simple-tab-1" data-bs-toggle="tab"
+                                       href="#simple-tabpanel-1" role="tab" aria-controls="simple-tabpanel-1" aria-selected="false">Projects</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="simple-tab-2" data-bs-toggle="tab"
+                                       href="#simple-tabpanel-2" role="tab" aria-controls="simple-tabpanel-2" aria-selected="false">Timelines</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="simple-tab-3" data-bs-toggle="tab"
+                                       href="#simple-tabpanel-3" role="tab" aria-controls="simple-tabpanel-2" aria-selected="false">Files</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="simple-tab-3" data-bs-toggle="tab"
+                                       href="#simple-tabpanel-4" role="tab" aria-controls="simple-tabpanel-2" aria-selected="false">Overview</a>
+                                </li>
+                                <div style="padding-left: 270px;">
+                                    <a href="" type="button" class="btn btn-purple" style="background-color: #591796;">
+                                        <img src="/img/icons.png" /> New Board
+                                    </a>
+
+                                    <button type="button" class="btn btn-light mr-2">
+                                        <img src="/img/filter.jpg" />
+                                        Filter
+                                    </button>
+                                </div>
+                            </ul>
+
+
+                            <div class="tab-content pt-5" id="tab-content">
+                                <div class="tab-pane active" id="simple-tabpanel-0" role="tabpanel" aria-labelledby="simple-tab-0">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <p class="mb-1" style="font-size: 16px; font-weight: 600;">Project List</p>
+                                        </div>
+                                        <div class="col-lg-5 text-end ">
+                                            <button type="button" class="btn btn-primary btn-sm"
+                                                    style="background-color: #EBE013; color:black;margin-bottom: 30px; ">
+                                                Export Users
+                                            </button>
+                                            <button type="button" class="btn btn-secondary btn-sm"
+                                                    style="background-color: #591796; color: white;margin-bottom: 30px; ">
+                                                Create New Projects
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="table-wrapper">
+                                        <table class="table mt-2">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">SNO</th>
+                                                    <th scope="col">CLIENT NAME</th>
+                                                    <th scope="col">ADDRESS</th>
+                                                    <th scope="col">ISSUE</th>
+                                                    <th scope="col">DATE OF JOINING</th>
+                                                    <th scope="col">ASSIGNED TO</th>
+                                                    <th scope="col">STATUS</th>
+                                                    <th scope="col">ACTION</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                @foreach (var client in Model.Clients)
+                                                {
+                                                    <tr>
+                                                        <td>@client.Sno</td>
+                                                        <td>@client.ClientName</td>
+                                                        <td>@client.Address</td>
+                                                        <td>@client.Issue</td>
+                                                        <td>@client.DateOfJoining</td>
+                                                        <td>@client.AssignedTo</td>
+                                                        <td>@client.Status</td>
+                                                        <td>
+                                                            <a href="Dashboard9.html" class="btn btn-primary btn-sm button1">View</a>
+                                                        </td>
+                                                    </tr>
+                                                }
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    </div>
+
+                                   @*  <div class="table-wrapper">
+                                        <table class="table mt-2 ">
+                                            <thead>
+                                                <tr>
+                                                    <td><i class="fas fa-square"></i></td>
+                                                    <th scope="col">SNO</th>
+                                                    <th scope="col">CLIENT NAME</th>
+                                                    <th scope="col">ADDRESS</th>
+                                                    <th scope="col">ISSUE</th>
+                                                    <th scope="col">DATE OF JOINNING</th>
+                                                    <th scope="col">ASSIGNED TO</th>
+                                                    <th scope="col">STATUS</th>
+                                                    <th scope="col">ACTION</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><i class="fas fa-square"></i></td>
+
+                                                    <td>
+                                                        <a href="Dashboard9.html" type="button" class="btn btn-primary btn-sm button1">View</a>
+                                                    </td>
+
+
+                                                </tr>
+                                                </thead>
+                                                <tr>
+                                                    <td><i class="fas fa-square"></i></td>
+                                                    <td>
+                                                        <a href="Dashboard9.html" type="button" class="btn btn-primary btn-sm button1">View</a>
+                                                    </td>
+
+
+                                                </tr>
+                                                </thead>
+                                                <tr>
+                                                    <td><i class="fas fa-square"></i></td>
+                                                    <td>
+                                                        <a href="Dashboard9.html" type="button" class="btn btn-primary btn-sm button1">View</a>
+                                                    </td>
+
+
+                                                </tr>
+                                                </thead>
+                                                <tr>
+                                                    <td><i class="fas fa-square"></i></td>
+                                                    <td>
+                                                        <a href="Dashboard9.html" type="button" class="btn btn-primary btn-sm button1">View</a>
+                                                    </td>
+
+
+                                                </tr>
+                                                </thead>
+                                                <tr>
+                                                    <td><i class="fas fa-square"></i></td>
+
+                                                    <td>
+                                                        <a href="Dashboard9.html" type="button" class="btn btn-primary btn-sm button1">View</a>
+                                                    </td>
+
+
+                                                </tr>
+                                                </thead>
+                                                <tr>
+                                                    <td><i class="fas fa-square"></i></td>
+                                                    <td>
+                                                        <a href="Dashboard9.html" type="button" class="btn btn-primary btn-sm button1">View</a>
+                                                    </td>
+
+
+                                                </tr>
+                                                </thead>
+                                                <tr>
+                                                    <td><i class="fas fa-square"></i></td>
+                                                    <td>
+                                                        <a href="Dashboard9.html" type="button" class="btn btn-primary btn-sm button1">View</a>
+                                                    </td>
+
+
+                                                </tr>
+                                                </thead>
+                                                <tr>
+                                                    <td><i class="fas fa-square"></i></td>
+                                                    <td>
+                                                        <a href="Dashboard9.html" type="button" class="btn btn-primary btn-sm button1">View</a>
+                                                    </td>
+
+
+                                                </tr>
+                                                </thead>
+                                                <tr>
+                                                    <td><i class="fas fa-square"></i></td>
+                                                    <td>
+                                                        <a href="Dashboard9.html" type="button" class="btn btn-primary btn-sm button1">View</a>
+                                                    </td>
+
+
+                                                </tr>
+                                                </thead>
+                                                <tr>
+                                                    <td><i class="fas fa-square"></i></td>
+
+                                                    <td>
+                                                        <a href="Dashboard9.html" type="button" class="btn btn-primary btn-sm button1">View</a>
+                                                    </td>
+
+
+                                                </tr>
+                                                </thead>
+                                                <tr>
+                                                    <td><i class="fas fa-square"></i></td>
+                                                    <td>
+                                                        <a href="Dashboard9.html" type="button" class="btn btn-primary btn-sm button1">View</a>
+                                                    </td>
+
+
+                                                </tr>
+                                                </thead>
+                                                <tr>
+                                                    <td><i class="fas fa-square"></i></td>
+
+                                                    <td>
+                                                        <a href="Dashboard9.html" type="button" class="btn btn-primary btn-sm button1">View</a>
+                                                    </td>
+
+
+                                                </tr>
+                                                </thead>
+                                                <tr>
+                                                    <td><i class="fas fa-square"></i></td>
+
+                                                    <td>
+                                                        <a href="Dashboard9.html" type="button" class="btn btn-primary btn-sm button1">View</a>
+                                                    </td>
+
+
+                                                <tr>
+                                                    <td><i class="fas fa-square"></i></td>
+
+                                                    <td>
+                                                        <a href="Dashboard9.html" type="button" class="btn btn-primary btn-sm button1">View</a>
+                                                    </td>
+
+
+                                                </tr>
+                                                </thead>
+
+
+                                                </thead>
+                                            </tbody>
+                                        </table> *@
+                                        <div class="row">
+                                            <div class="col-auto">
+                                                <p class="text-muted">Showing 01-09 of 1000</p>
+                                            </div>
+                                            <div class="col ml-auto">
+                                                <nav aria-label="Page navigation example">
+                                                    <ul id="page-numbers" class="pagination justify-content-end">
+                                                    </ul>
+                                                </nav>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane" id="simple-tabpanel-1" role="tabpanel" aria-labelledby="simple-tab-1">
+                                    <div class="row mt-3 gx-4">
+
+
+                                        <div class="col-lg-3 ">
+
+                                            <div class="row">
+                                                <div class="col-lg-12 ">
+                                                    <div class="task mt-2 d-flex">
+                                                        <div class="circle"></div>
+                                                        <span class="text">TO DO</span>
+                                                        <div class="inner-circle">
+                                                            <div class="circle1">3</div>
+
+                                                        </div>
+                                                        <img class="task img" src="/img/Frame 71.png" alt="Image Description">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card mb-4 mt-1">
+                                        @foreach (var project in Model.Projects)
+                                        {
+                                            <div class="container">
+                                                <div class="project-card">
+                                                    <h4 class="label7">@project.Name</h4>
+                                                    <h6 class="label">@project.Description</h6>
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <h6 class="label1"> <span>Place </span></h6>
+                                                            <h6 class="label2">@project.Location</h6>
+                                                        </div>
+                                                        <div class="col">
+                                                            <h6 class="label"> <span>Type of Project </span></h6>
+                                                            <h6 class="label2">@project.Type</h6>
+                                                        </div>
+                                                        <div class="col">
+                                                            <h6 class="label1"> <span>Status </span></h6>
+                                                            <h6 class="label6 lab">@project.Status</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-4">
+                                                            <h6 class="label1">@project.StartDate.ToString("d-MMM-yyyy")</h6>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <!-- Image -->
+                                                            <img class="mb-2" src="/img/Vector 2527.png" alt="Image">
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <h6 class="label1">@project.EndDate.ToString("d-MMM-yyyy")</h6>
+                                                        </div>
+                                                        <div class="col-4 d-flex gap-1">
+                                                            <h6 class="text-nowrap label3">Assigned to </h6><img src="/img/Frame 1000001137.png" alt="Image" width="60" height="20"
+                                                                                                                 style="margin-right: 60px;">
+                                                            <button class="btn btn-primary text-nowrap label4  ml-auto">
+                                                                View More
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        }
+
+
+
+
+                        @*                                         <div class="col-lg-3">
+                                            <div class="row">
+                                                <div class="col-lg-12 ">
+                                                    <div class="task mt-2 d-flex">
+                                                        <div class="circle2"></div>
+                                                        <span class="text">IN PROGRESS<span style="margin-left: 20px;">4</span></span>
+                                                        <div class="inner-circle">
+                                                            <div class="circle1"></div>
+
+                                                        </div>
+                                                        <img class="task img" src="/img/Frame 71.png" alt="Image Description">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card mb-4 mt-1">
+                                                <h4 class="label7">Name of the project</h4>
+                                                <h6 class="label">Short Description of the project in 2 lines or less</h6>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <h6 class="label1"> <span>Place </span></h6>
+                                                        <h6 class="label2">Location, NY</h6>
+                                                    </div>
+                                                    <div class="col">
+                                                        <h6 class="label"> <span>Type of recall </span></h6>
+                                                        <h6 class="label2">Replacement</h6>
+                                                    </div>
+                                                    <div class="col">
+                                                        <h6 class="label1"> <span>Status </span></h6>
+                                                        <h6 class="label6">In Progress</h6>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <h6 class="label1">8-Feb-2023</h6>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <!-- Image -->
+                                                        <img class="mb-2" src="/img/Vector 2527.png" alt="Image">
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <h6 class="label1">9-Feb-2024</h6>
+                                                    </div>
+                                                    <div class="col-4 d-flex gap-1">
+                                                        <h6 class="text-nowrap label3">Assigned to </h6><img src="/img/Frame 1000001137.png" alt="Image" width="60" height="20"
+                                                                                                             style="margin-right: 60px;">
+                                                        <button class="btn btn-primary text-nowrap label4  ml-auto">
+                                                            View
+                                                            More
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-3 ">
+                                            <div class="row">
+                                                <div class="col-lg-12 ">
+                                                    <div class="task mt-2 d-flex">
+                                                        <div class="circle3"></div>
+                                                        <span class="text">IN REVIEW<span style="margin-left: 20px;">3</span></span>
+                                                        <div class="inner-circle">
+                                                            <div class="circle1"></div>
+
+                                                        </div>
+                                                        <img class="task img" src="/img/Frame 71.png" alt="Image Description">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card mb-4 mt-1">
+                                                <h4 class="label7">Name of the project</h4>
+                                                <h6 class="label">Short Description of the project in 2 lines or less</h6>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <h6 class="label1"> <span>Place </span></h6>
+                                                        <h6 class="label2">Location, NY</h6>
+                                                    </div>
+                                                    <div class="col">
+                                                        <h6 class="label"> <span>Type of recall </span></h6>
+                                                        <h6 class="label2">Replacement</h6>
+                                                    </div>
+                                                    <div class="col">
+                                                        <h6 class="label1"> <span>Status </span></h6>
+                                                        <h6 class="label6 lab1">In Review</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <h6 class="label1">8-Feb-2023</h6>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <!-- Image -->
+                                                        <img class="mb-2" src="/img/Vector 2527.png" alt="Image">
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <h6 class="label1">9-Feb-2024</h6>
+                                                    </div>
+                                                    <div class="col-4 d-flex gap-1">
+                                                        <h6 class="text-nowrap label3">Assigned to </h6><img src="/img/Frame 1000001137.png" alt="Image" width="60" height="20"
+                                                                                                             style="margin-right: 60px;">
+                                                        <button class="btn btn-primary text-nowrap label4  ml-auto">
+                                                            View
+                                                            More
+                                                        </button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-lg-3 ">
+                                            <div class="row">
+                                                <div class="col-lg-12 ">
+                                                    <div class="task mt-2 d-flex">
+                                                        <div class="circle4"></div>
+                                                        <span class="text">COMPLETED<span style="margin-left: 20px;">5</span></span>
+                                                        <div class="inner-circle">
+                                                            <div class="circle1"></div>
+
+                                                        </div>
+                                                        <img class="task img" src="/img/Frame 71.png" alt="Image Description">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card mb-4 mt-1">
+                                                <h4 class="label7">Name of the project</h4>
+                                                <h6 class="label">Short Description of the project in 2 lines or less</h6>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <h6 class="label1"> <span>Place </span></h6>
+                                                        <h6 class="label2">Location, NY</h6>
+                                                    </div>
+                                                    <div class="col">
+                                                        <h6 class="label"> <span>Type of recall </span></h6>
+                                                        <h6 class="label2">Replacement</h6>
+                                                    </div>
+                                                    <div class="col">
+                                                        <h6 class="label1"> <span>Status </span></h6>
+                                                        <h6 class="label6 lab2">Completed</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <h6 class="label1">8-Feb-2023</h6>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <!-- Image -->
+                                                        <img class="mb-2" src="/img/Vector 2527.png" alt="Image">
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <h6 class="label1">9-Feb-2024</h6>
+                                                    </div>
+                                                    <div class="col-4 d-flex gap-1">
+                                                        <h6 class="text-nowrap label3">Assigned to </h6><img src="/img/Frame 1000001137.png" alt="Image" width="60" height="20"
+                                                                                                             style="margin-right: 60px;">
+                                                        <button class="btn btn-primary text-nowrap label4  ml-auto">
+                                                            View
+                                                            More
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="row gx-4 move">
+
+                                        <div class="col-lg-3  ">
+
+                                            <div class="card mb-4">
+                                                <h4 class="label7">Name of the project</h4>
+                                                <h6 class="label">Short Description of the project in 2 lines or less</h6>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <h6 class="label1"> <span>Place </span></h6>
+                                                        <h6 class="label2">Location, NY</h6>
+                                                    </div>
+                                                    <div class="col">
+                                                        <h6 class="label"> <span>Type of recall </span></h6>
+                                                        <h6 class="label2">Replacement</h6>
+                                                    </div>
+                                                    <div class="col">
+                                                        <h6 class="label1"> <span>Status </span></h6>
+                                                        <h6 class="label6 lab">Not Started</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <h6 class="label1">8-Feb-2023</h6>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <!-- Image -->
+                                                        <img class="mb-2" src="/img/Vector 2527.png" alt="Image">
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <h6 class="label1">9-Feb-2024</h6>
+                                                    </div>
+                                                    <div class="col-4 d-flex gap-1">
+                                                        <h6 class="text-nowrap label3">Assigned to </h6><img src="/img/Frame 1000001137.png" alt="Image" width="60" height="20"
+                                                                                                             style="margin-right: 60px;">
+                                                        <button class="btn btn-primary text-nowrap label4  ml-auto">
+                                                            View
+                                                            More
+                                                        </button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-lg-3 ">
+                                            <div class="card mb-4">
+                                                <h4 class="label7">Name of the project</h4>
+                                                <h6 class="label">Short Description of the project in 2 lines or less</h6>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <h6 class="label1"> <span>Place </span></h6>
+                                                        <h6 class="label2">Location, NY</h6>
+                                                    </div>
+                                                    <div class="col">
+                                                        <h6 class="label"> <span>Type of recall </span></h6>
+                                                        <h6 class="label2">Replacement</h6>
+                                                    </div>
+                                                    <div class="col">
+                                                        <h6 class="label1"> <span>Status </span></h6>
+                                                        <h6 class="label6">In Progress</h6>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <h6 class="label1">8-Feb-2023</h6>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <!-- Image -->
+                                                        <img class="mb-2" src="/img/Vector 2527.png" alt="Image">
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <h6 class="label1">9-Feb-2024</h6>
+                                                    </div>
+                                                    <div class="col-4 d-flex gap-1">
+                                                        <h6 class="text-nowrap label3">Assigned to </h6><img src="/img/Frame 1000001137.png" alt="Image" width="60" height="20"
+                                                                                                             style="margin-right: 60px;">
+                                                        <button class="btn btn-primary text-nowrap label4  ml-auto">
+                                                            View
+                                                            More
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-3 ">
+                                            <div class="card mb-4">
+                                                <h4 class="label7">Name of the project</h4>
+                                                <h6 class="label">Short Description of the project in 2 lines or less</h6>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <h6 class="label1"> <span>Place </span></h6>
+                                                        <h6 class="label2">Location, NY</h6>
+                                                    </div>
+                                                    <div class="col">
+                                                        <h6 class="label"> <span>Type of recall </span></h6>
+                                                        <h6 class="label2">Replacement</h6>
+                                                    </div>
+                                                    <div class="col">
+                                                        <h6 class="label1"> <span>Status </span></h6>
+                                                        <h6 class="label6 lab1">In Review</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <h6 class="label1">8-Feb-2023</h6>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <!-- Image -->
+                                                        <img class="mb-2" src="/img/Vector 2527.png" alt="Image">
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <h6 class="label1">9-Feb-2024</h6>
+                                                    </div>
+                                                    <div class="col-4 d-flex gap-1">
+                                                        <h6 class="text-nowrap label3">Assigned to </h6><img src="/img/Frame 1000001137.png" alt="Image" width="60" height="20"
+                                                                                                             style="margin-right: 60px;">
+                                                        <button class="btn btn-primary text-nowrap label4  ml-auto">
+                                                            View
+                                                            More
+                                                        </button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-3 ">
+                                            <div class="card mb-4">
+                                                <h4 class="label7">Name of the project</h4>
+                                                <h6 class="label">Short Description of the project in 2 lines or less</h6>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <h6 class="label1"> <span>Place </span></h6>
+                                                        <h6 class="label2">Location, NY</h6>
+                                                    </div>
+                                                    <div class="col">
+                                                        <h6 class="label"> <span>Type of recall </span></h6>
+                                                        <h6 class="label2">Replacement</h6>
+                                                    </div>
+                                                    <div class="col">
+                                                        <h6 class="label1"> <span>Status </span></h6>
+                                                        <h6 class="label6 lab2">Completed</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <h6 class="label1">8-Feb-2023</h6>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <!-- Image -->
+                                                        <img class="mb-2" src="/img/Vector 2527.png" alt="Image">
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <h6 class="label1">9-Feb-2024</h6>
+                                                    </div>
+                                                    <div class="col-4 d-flex gap-1">
+                                                        <h6 class="text-nowrap label3">Assigned to </h6><img src="/img/Frame 1000001137.png" alt="Image" width="60" height="20"
+                                                                                                             style="margin-right: 60px;">
+                                                        <button class="btn btn-primary text-nowrap label4  ml-auto">
+                                                            View
+                                                            More
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="row gx-4 move">
+
+                                        <div class="col-lg-3  ">
+
+                                            <div class="card mb-4">
+                                                <h4 class="label7">Name of the project</h4>
+                                                <h6 class="label">Short Description of the project in 2 lines or less</h6>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <h6 class="label1"> <span>Place </span></h6>
+                                                        <h6 class="label2">Location, NY</h6>
+                                                    </div>
+                                                    <div class="col">
+                                                        <h6 class="label"> <span>Type of recall </span></h6>
+                                                        <h6 class="label2">Replacement</h6>
+                                                    </div>
+                                                    <div class="col">
+                                                        <h6 class="label1"> <span>Status </span></h6>
+                                                        <h6 class="label6 lab">Not Started</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <h6 class="label1">8-Feb-2023</h6>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <!-- Image -->
+                                                        <img class="mb-2" src="/img/Vector 2527.png" alt="Image">
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <h6 class="label1">9-Feb-2024</h6>
+                                                    </div>
+                                                    <div class="col-4 d-flex gap-1">
+                                                        <h6 class="text-nowrap label3">Assigned to </h6><img src="/img/Frame 1000001137.png" alt="Image" width="60" height="20"
+                                                                                                             style="margin-right: 60px;">
+                                                        <button class="btn btn-primary text-nowrap label4  ml-auto">
+                                                            View
+                                                            More
+                                                        </button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-3 ">
+                                            <div class="card mb-4">
+                                                <h4 class="label7">Name of the project</h4>
+                                                <h6 class="label">Short Description of the project in 2 lines or less</h6>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <h6 class="label1"> <span>Place </span></h6>
+                                                        <h6 class="label2">Location, NY</h6>
+                                                    </div>
+                                                    <div class="col">
+                                                        <h6 class="label"> <span>Type of recall </span></h6>
+                                                        <h6 class="label2">Replacement</h6>
+                                                    </div>
+                                                    <div class="col">
+                                                        <h6 class="label1"> <span>Status </span></h6>
+                                                        <h6 class="label6">In Progress</h6>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <h6 class="label1">8-Feb-2023</h6>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <!-- Image -->
+                                                        <img class="mb-2" src="/img/Vector 2527.png" alt="Image">
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <h6 class="label1">9-Feb-2024</h6>
+                                                    </div>
+                                                    <div class="col-4 d-flex gap-1">
+                                                        <h6 class="text-nowrap label3">Assigned to </h6><img src="/img/Frame 1000001137.png" alt="Image" width="60" height="20"
+                                                                                                             style="margin-right: 60px;">
+                                                        <button class="btn btn-primary text-nowrap label4  ml-auto">
+                                                            View
+                                                            More
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-3 ">
+                                            <div class="card mb-4">
+                                                <h4 class="label7">Name of the project</h4>
+                                                <h6 class="label">Short Description of the project in 2 lines or less</h6>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <h6 class="label1"> <span>Place </span></h6>
+                                                        <h6 class="label2">Location, NY</h6>
+                                                    </div>
+                                                    <div class="col">
+                                                        <h6 class="label"> <span>Type of recall </span></h6>
+                                                        <h6 class="label2">Replacement</h6>
+                                                    </div>
+                                                    <div class="col">
+                                                        <h6 class="label1"> <span>Status </span></h6>
+                                                        <h6 class="label6 lab1">In Review</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <h6 class="label1">8-Feb-2023</h6>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <!-- Image -->
+                                                        <img class="mb-2" src="/img/Vector 2527.png" alt="Image">
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <h6 class="label1">9-Feb-2024</h6>
+                                                    </div>
+                                                    <div class="col-4 d-flex gap-1">
+                                                        <h6 class="text-nowrap label3">Assigned to </h6><img src="/img/Frame 1000001137.png" alt="Image" width="60" height="20"
+                                                                                                             style="margin-right: 60px;">
+                                                        <button class="btn btn-primary text-nowrap label4  ml-auto">
+                                                            View
+                                                            More
+                                                        </button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-3 ">
+                                            <div class="card mb-4">
+                                                <h4 class="label7">Name of the project</h4>
+                                                <h6 class="label">Short Description of the project in 2 lines or less</h6>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <h6 class="label1"> <span>Place </span></h6>
+                                                        <h6 class="label2">Location, NY</h6>
+                                                    </div>
+                                                    <div class="col">
+                                                        <h6 class="label"> <span>Type of recall </span></h6>
+                                                        <h6 class="label2">Replacement</h6>
+                                                    </div>
+                                                    <div class="col">
+                                                        <h6 class="label1"> <span>Status </span></h6>
+                                                        <h6 class="label6 lab2">Completed</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <h6 class="label1">8-Feb-2023</h6>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <!-- Image -->
+                                                        <img class="mb-2" src="/img/Vector 2527.png" alt="Image">
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <h6 class="label1">9-Feb-2024</h6>
+                                                    </div>
+                                                    <div class="col-4 d-flex gap-1">
+                                                        <h6 class="text-nowrap label3">Assigned to </h6><img src="/img/Frame 1000001137.png" alt="Image" width="60" height="20"
+                                                                                                             style="margin-right: 60px;">
+                                                        <button class="btn btn-primary text-nowrap label4  ml-auto">
+                                                            View
+                                                            More
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row gx-4 move">
+
+                                        <div class="col-lg-3  ">
+                                        </div>
+
+                                        <div class="col-lg-3 ">
+                                            <div class="card mb-4 p-2">
+                                                <h4 class="label7">Name of the project</h4>
+                                                <h6 class="label">Short Description of the project in 2 lines or less</h6>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <h6 class="label1"> <span>Place </span></h6>
+                                                        <h6 class="label2">Location, NY</h6>
+                                                    </div>
+                                                    <div class="col">
+                                                        <h6 class="label"> <span>Type of recall </span></h6>
+                                                        <h6 class="label2">Replacement</h6>
+                                                    </div>
+                                                    <div class="col">
+                                                        <h6 class="label1"> <span>Status </span></h6>
+                                                        <h6 class="label6">In Progress</h6>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <h6 class="label1">8-Feb-2023</h6>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <!-- Image -->
+                                                        <img class="mb-2" src="/img/Vector 2527.png" alt="Image">
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <h6 class="label1">9-Feb-2024</h6>
+                                                    </div>
+                                                    <div class="col-4 d-flex gap-1">
+                                                        <h6 class="text-nowrap label3">Assigned to </h6><img src="/img/Frame 1000001137.png" alt="Image" width="60" height="20"
+                                                                                                             style="margin-right: 60px;">
+                                                        <button class="btn btn-primary text-nowrap label4  ml-auto">
+                                                            View
+                                                            More
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-3 ">
+                                        </div>
+
+                                        <div class="col-lg-3 ">
+                                            <div class="card mb-4">
+                                                <h4 class="label7">Name of the project</h4>
+                                                <h6 class="label">Short Description of the project in 2 lines or less</h6>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <h6 class="label1"> <span>Place </span></h6>
+                                                        <h6 class="label2">Location, NY</h6>
+                                                    </div>
+                                                    <div class="col">
+                                                        <h6 class="label"> <span>Type of recall </span></h6>
+                                                        <h6 class="label2">Replacement</h6>
+                                                    </div>
+                                                    <div class="col">
+                                                        <h6 class="label1"> <span>Status </span></h6>
+                                                        <h6 class="label6 lab2">Completed</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <h6 class="label1">8-Feb-2023</h6>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <!-- Image -->
+                                                        <img class="mb-2" src="/img/Vector 2527.png" alt="Image">
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <h6 class="label1">9-Feb-2024</h6>
+                                                    </div>
+                                                    <div class="col-4 d-flex gap-1">
+                                                        <h6 class="text-nowrap label3">Assigned to </h6><img src="/img/Frame 1000001137.png" alt="Image" width="60" height="20"
+                                                                                                             style="margin-right: 60px;">
+                                                        <button class="btn btn-primary text-nowrap label4  ml-auto">
+                                                            View
+                                                            More
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+ *@                            </div>
+
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+    <!-- mobile verion -->
+    <div class="container-fluid d-lg-none">
+        <div class="row   d-lg-none   mx-auto das" style="top: 40px; z-index: 0;">
+            <h5 class=" col-md-4 col-10 fw-bold">Dashboard</h5>
+            <img class="col-2" src="/img/Button.png" alt="dropdown image">
+
+
+
+            <div class="col-lg-4 col-md-6 col-10 mb-2 form-group has-search d-flex">
+                <span class="fa fa-search form-control-feedback"></span>
+                <input type="text" id="myInput1" class="form-control " placeholder="Search">
+                <img class="sortIcon" src="/img/arrow-sort-outline.png" width="25" height="25">
+            </div>
+
+            <nav class="nav nav-pills nav-fill mt-3">
+                <a class="nav-link active" aria-current="page" href="#"
+                   style="background-color: rgba(89, 23, 150, 1);">Overview</a>
+                <a class="nav-link active" aria-current="page" href="#" style="background-color: rgba(238, 243, 245, 1); color:
+                        rgba(171, 175, 177, 1);">Analytics</a>
+            </nav>
+            <h5 class=" col-md-4 col-10 mt-3 ">Projects</h5>
+            <div class="card cd col-md-4">
+
+                <div class="row flex-sm-row card2">
+
+                    <h4 class="label">Name of the project</h4>
+                    <h6 class="label">Short Description of the project in 2 lines or less</h6>
+                    <div class="row">
+                        <div class="col">
+                            <h6 class="label1"> <span>Place </span></h6>
+                            <h6 class="label2">Location, NY</h6>
+                        </div>
+                        <div class="col">
+                            <h6 class="label"> <span>Type of recall </span></h6>
+                            <h6 class="label2">Replacement</h6>
+                        </div>
+                        <div class="col">
+                            <h6 class="label1"> <span>Status </span></h6>
+                            <h6 style="color:
+                                                    rgba(235, 175, 19, 1); font-size: 11px;">
+                                In Progress
+                            </h6>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <h6 class="label1">8-Feb-2023</h6>
+                        </div>
+                        <div class="col-2">
+                            <!-- Image -->
+                            <img class="mb-2" src="/img/Vector 2527.png" alt="Image">
+                        </div>
+                        <div class="col-4">
+                            <h6 class="label1">9-Feb-2024</h6>
+                        </div>
+                        <div class="col-4 d-flex gap-1">
+                            <h6 class="text-nowrap label3">Assigned to </h6><img src="/img/Frame 1000001137.png" alt="Image" width="60" height="20"
+                                                                                 style="margin-right: 60px;">
+                            <a href="mobile8.html" type="button" class="btn btn-primary btn-sm button1">View More</a>
+                            <!-- <button class="btn btn-primary text-nowrap label4  ml-auto" >View
+                                More</button> -->
+
+
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+        <div class="card  col-md-4 mt-2">
+            <div class="row flex-sm-row card2">
+
+                <h4 class="label">Name of the project</h4>
+                <h6 class="label">Short Description of the project in 2 lines or less</h6>
+                <div class="row">
+                    <div class="col">
+                        <h6 class="label1"> <span>Place </span></h6>
+                        <h6 class="label2">Location, NY</h6>
+                    </div>
+                    <div class="col">
+                        <h6 class="label"> <span>Type of recall </span></h6>
+                        <h6 class="label2">Replacement</h6>
+                    </div>
+                    <div class="col">
+                        <h6 class="label1"> <span>Status </span></h6>
+                        <h6 style="color:
+                                                rgba(235, 175, 19, 1); font-size: 11px;">
+                            In Progress
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <h6 class="label1">8-Feb-2023</h6>
+                    </div>
+                    <div class="col-2">
+                        <!-- Image -->
+                        <img class="mb-2" src="/img/Vector 2527.png" alt="Image">
+                    </div>
+                    <div class="col-4">
+                        <h6 class="label1">9-Feb-2024</h6>
+                    </div>
+                    <div class="col-4 d-flex gap-1">
+                        <h6 class="text-nowrap label3">Assigned to </h6><img src="/img/Frame 1000001137.png" alt="Image" width="60" height="20"
+                                                                             style="margin-right: 60px;">
+                        <a href="mobile8.html" type="button" class="btn btn-primary btn-sm button1">View More</a>
+
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+        <div class="card  col-md-4 mt-2">
+            <div class="row flex-sm-row card2">
+
+                <h4 class="label">Name of the project</h4>
+                <h6 class="label">Short Description of the project in 2 lines or less</h6>
+                <div class="row">
+                    <div class="col">
+                        <h6 class="label1"> <span>Place </span></h6>
+                        <h6 class="label2">Location, NY</h6>
+                    </div>
+                    <div class="col">
+                        <h6 class="label"> <span>Type of recall </span></h6>
+                        <h6 class="label2">Replacement</h6>
+                    </div>
+                    <div class="col">
+                        <h6 class="label1"> <span>Status </span></h6>
+                        <h6 style="color:
+                                                rgba(235, 175, 19, 1); font-size: 11px;">
+                            In Progress
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <h6 class="label1">8-Feb-2023</h6>
+                    </div>
+                    <div class="col-2">
+                        <!-- Image -->
+                        <img class="mb-2" src="/img/Vector 2527.png" alt="Image">
+                    </div>
+                    <div class="col-4">
+                        <h6 class="label1">9-Feb-2024</h6>
+                    </div>
+                    <div class="col-4 d-flex gap-1">
+                        <h6 class="text-nowrap label3">Assigned to </h6><img src="/img/Frame 1000001137.png" alt="Image" width="60" height="20"
+                                                                             style="margin-right: 60px;">
+                        <a href="mobile8.html" type="button" class="btn btn-primary btn-sm button1">View More</a>
+
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+        <div class="card  col-md-4 mt-2">
+            <div class="row flex-sm-row card2">
+
+                <h4 class="label">Name of the project</h4>
+                <h6 class="label">Short Description of the project in 2 lines or less</h6>
+                <div class="row">
+                    <div class="col">
+                        <h6 class="label1"> <span>Place </span></h6>
+                        <h6 class="label2">Location, NY</h6>
+                    </div>
+                    <div class="col">
+                        <h6 class="label"> <span>Type of recall </span></h6>
+                        <h6 class="label2">Replacement</h6>
+                    </div>
+                    <div class="col">
+                        <h6 class="label1"> <span>Status </span></h6>
+                        <h6 style="color:
+                                                rgba(235, 175, 19, 1); font-size: 11px;">
+                            In Progress
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <h6 class="label1">8-Feb-2023</h6>
+                    </div>
+                    <div class="col-2">
+                        <!-- Image -->
+                        <img class="mb-2" src="/img/Vector 2527.png" alt="Image">
+                    </div>
+                    <div class="col-4">
+                        <h6 class="label1">9-Feb-2024</h6>
+                    </div>
+                    <div class="col-4 d-flex gap-1">
+                        <h6 class="text-nowrap label3">Assigned to </h6><img src="/img/Frame 1000001137.png" alt="Image" width="60" height="20"
+                                                                             style="margin-right: 60px;">
+                        <a href="mobile8.html" type="button" class="btn btn-primary btn-sm button1 ">View More</a>
+
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+        <h5 class=" col-md-4 col-10 mt-3 ">Productivity</h5>
+        <div class="container d-lg-none d-md-none position-fixed fixed-bottom bottom-0">
+            <div class="card bg-white rounded-4" style="width: 320px; height: 50px;  margin-bottom: 10px;">
+                <div class="row">
+                    <div class="col-1"></div>
+                    <div class="col-2">
+                        <a href="dashboard.html">
+                            <img id="iconDashboard" class="mb-lg-3 iconDash" width="28"
+                                 height="35" src="/img/Bottom Navigation Tab.png"
+                                 data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Dashboard"
+                                 alt="dashboard" />
+                        </a>
+                    </div>
+                    <div class="col-2">
+                        <a href="mobile2.html">
+                            <img id="iconEvp" class="mb-lg-3" width="25" height="35"
+                                 src="/img/Bottom Navigation Tab (1).png" data-bs-toggle="tooltip" data-bs-placement="right"
+                                 data-bs-title="Evaporation" alt="evaporation" />
+                        </a>
+                    </div>
+                    <div class="col-2">
+                        <a href="mobile9.html">
+                            <img id="iconFarm" class="mb-lg-3" width="28" height="35"
+                                 src="/img/Bottom Navigation Tab (2).png" data-bs-toggle="tooltip" data-bs-placement="right"
+                                 data-bs-title="My Farms" alt="Farms" />
+                        </a>
+                    </div>
+                    <div class="col-2">
+                        <a href="mobile5.html">
+                            <img id="iconCrops" class="mb-lg-3" width="28" height="35"
+                                 src="/img/Bottom Navigation Tab (3).png" data-bs-toggle="tooltip" data-bs-placement="right"
+                                 data-bs-title="Crops" alt="Crops" />
+                        </a>
+                    </div>
+                    <div class="col-2">
+                        <a href="">
+                            <img id="iconOrders" class="mb-lg-3" width="28" height="35"
+                                 src="/img/Bottom Navigation Tab (4).png" data-bs-toggle="tooltip" data-bs-placement="right"
+                                 data-bs-title="Orders" alt="Orders" />
+                        </a>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <script>
+        document.getElementById('recallsLink').addEventListener('click', function(event) {
+        // Prevent the default action of the link
+        event.preventDefault();
+
+        // Redirect to Dashboard9
+                    window.location.href = '/Home/Dashboard9.cshtml'; // Change this to the actual URL of your Dashboard9 page
+    });
+
+        function generatePageNumbers(totalPages) {
+            var pagination = document.getElementById('page-numbers');
+            pagination.innerHTML = '';
+
+
+            pagination.innerHTML += '<li class="page-item"><a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>';
+
+
+            for (var i = 1; i <= totalPages; i++) {
+                pagination.innerHTML += '<li class="page-item"><a class="page-link" href="#">' + i + '</a></li>';
+            }
+
+
+            pagination.innerHTML += '<li class="page-item"><a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>';
+        }
+
+
+        generatePageNumbers(3);
+    </script>
+
+</body>
+
+</html>
